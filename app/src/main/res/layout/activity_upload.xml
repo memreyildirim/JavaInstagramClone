@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UploadActivity">
+    tools:context=".views.UploadActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -14,6 +14,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="30dp"
+        android:background="@color/white"
         android:onClick="selectImage"
         app:layout_constraintBottom_toTopOf="@+id/commentTxt"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +27,7 @@
         android:id="@+id/uploadButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="166dp"
         android:onClick="upload"
         android:text="Upload"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,13 +39,14 @@
         android:id="@+id/commentTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="44dp"
         android:ems="10"
         android:hint="Write your comment"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/uploadButton"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

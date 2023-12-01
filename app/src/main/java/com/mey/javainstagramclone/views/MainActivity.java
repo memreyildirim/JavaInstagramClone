@@ -1,4 +1,4 @@
-package com.mey.javainstagramclone;
+package com.mey.javainstagramclone.views;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +14,6 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.mey.javainstagramclone.databinding.ActivityMainBinding;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser firebaseUser=firebaseAuth.getCurrentUser();
 
         if (firebaseUser != null){
-            Intent intent=new Intent(MainActivity.this,FeedActivity.class);
+            Intent intent=new Intent(MainActivity.this, FeedActivity.class);
             startActivity(intent);
             finish();
 

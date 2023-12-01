@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10sp">
+
+    <TextView
+        android:id="@+id/recyclerRowUserEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="22sp"
+        android:textColor="#DD2020">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/recyclerRowImageView"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/recyclerViewCommentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Users comment"
+        android:textSize="20sp"
+        android:textColor="#2289DC">
+
+    </TextView>
+
+</LinearLayout>
